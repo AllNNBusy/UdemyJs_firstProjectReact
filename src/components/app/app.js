@@ -58,6 +58,18 @@ class App extends Component {
     }))
   }
 
+  changeSalary = (id, e) => {
+    const convertToNum = +e.replace('$', '')
+    this.setState(({data}) => ({
+      data: data.map(item => {
+        if (item.id === id) {
+          return {...item, salary: convertToNum}
+        }
+        return item;
+      })
+    }))
+  }
+
   searchEmp = (items, term) => {
     if (term.length === 0) {
       return items;
@@ -111,7 +123,8 @@ class App extends Component {
         <EmployeeList
           data={visibleData}
           onDelete={this.deleteItem}
-          onToggleProp={this.onToggleProp}/>
+          onToggleProp={this.onToggleProp}
+          changeSalary={this.changeSalary}/>
 
         <EmployeeAddForm
           onAdd={this.addItem}/>
