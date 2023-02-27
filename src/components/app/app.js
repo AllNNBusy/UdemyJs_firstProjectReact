@@ -111,14 +111,14 @@ class App extends Component {
           employees={employees}
           increased={increased}/>
 
-        <div className="search-panel">
+        <nav className="search-panel">
           <SearchPanel
             onUpdateSearch={this.onUpdateSearch}/>
 
           <AppFilter
             filter={filter}
             onFilterSelect={this.onFilterSelect}/>
-        </div>
+        </nav>
 
         <EmployeeList
           data={visibleData}

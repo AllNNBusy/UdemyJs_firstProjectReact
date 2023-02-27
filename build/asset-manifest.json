@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/UdemyJs_firstProjectReact/static/css/main.a8a10f8e.css",
+    "main.js": "/UdemyJs_firstProjectReact/static/js/main.b8a76e90.js",
+    "index.html": "/UdemyJs_firstProjectReact/index.html",
+    "main.a8a10f8e.css.map": "/UdemyJs_firstProjectReact/static/css/main.a8a10f8e.css.map",
+    "main.b8a76e90.js.map": "/UdemyJs_firstProjectReact/static/js/main.b8a76e90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8a10f8e.css",
+    "static/js/main.b8a76e90.js"
+  ]
+}
